@@ -1,0 +1,262 @@
+.result-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.result-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.result-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.result-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+}
+
+.result-header h2 {
+  margin: 0;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+.score-section {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border: 8px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.score-text {
+  text-align: center;
+}
+
+.percentage {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.grade {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.score-details {
+  flex: 1;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item .label {
+  font-weight: 600;
+  color: #333;
+}
+
+.detail-item .value {
+  color: #667eea;
+  font-weight: 500;
+}
+
+.actions {
+  padding: 20px 40px;
+  background: #f8f9fa;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.dashboard-btn, .review-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.dashboard-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.review-btn {
+  background: #667eea;
+  color: white;
+}
+
+.dashboard-btn:hover, .review-btn:hover {
+  transform: translateY(-2px);
+}
+
+.answers-review {
+  padding: 40px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.answers-review h3 {
+  margin: 0 0 30px 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.answer-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.question-number {
+  background: #667eea;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.answer-status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.answer-status.correct {
+  background: #d4edda;
+  color: #155724;
+}
+
+.answer-status.incorrect {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.question-text {
+  margin: 15px 0 20px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.options-review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-review {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.option-review.correct-option {
+  border-color: #28a745;
+  background: #d4edda;
+}
+
+.option-review.wrong-option {
+  border-color: #dc3545;
+  background: #f8d7da;
+}
+
+.option-review.selected-correct {
+  border-color: #28a745;
+  background: #d4edda;
+}
+
+.option-label {
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 25px;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.selected-indicator, .correct-indicator {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.selected-indicator {
+  background: #ffc107;
+  color: #856404;
+}
+
+.correct-indicator {
+  background: #28a745;
+  color: white;
+}
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .score-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .actions {
+    flex-direction: column;
+  }
+  
+  .result-container {
+    margin: 10px;
+  }
+}
