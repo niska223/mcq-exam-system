@@ -57,12 +57,12 @@ cp .env.example .env
 4. Update the `.env` file with your actual MongoDB Atlas credentials:
 
 ```env
-MONGO_URI=mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/mcq?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://[REPLACE_WITH_USERNAME]:[REPLACE_WITH_PASSWORD]@[REPLACE_WITH_CLUSTER].mongodb.net/mcq?retryWrites=true&w=majority
 PORT=5000
 NODE_ENV=development
 ```
 
-**Important:** Replace `YOUR_USERNAME`, `YOUR_PASSWORD`, and `YOUR_CLUSTER` with your actual MongoDB Atlas credentials.
+**Important:** Replace `[REPLACE_WITH_USERNAME]`, `[REPLACE_WITH_PASSWORD]`, and `[REPLACE_WITH_CLUSTER]` with your actual MongoDB Atlas credentials.
 
 **Security Note:** Never commit your actual `.env` file with real credentials to version control. The `.env` file is already included in `.gitignore` to prevent accidental commits.
 
