@@ -47,13 +47,24 @@ npm install
 #### Configure Environment Variables:
 1. Create a MongoDB Atlas account at https://www.mongodb.com/atlas
 2. Create a new cluster and get your connection string
-3. Update the `.env` file with your MongoDB Atlas credentials:
+3. Create a `.env` file in the server directory using the `.env.example` template:
+
+```bash
+# Copy the example file
+cp .env.example .env
+```
+
+4. Update the `.env` file with your actual MongoDB Atlas credentials:
 
 ```env
-MONGO_URI=mongodb+srv://your-username:your-password@cluster.mongodb.net/mcq-system?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/mcq?retryWrites=true&w=majority
 PORT=5000
 NODE_ENV=development
 ```
+
+**Important:** Replace `YOUR_USERNAME`, `YOUR_PASSWORD`, and `YOUR_CLUSTER` with your actual MongoDB Atlas credentials.
+
+**Security Note:** Never commit your actual `.env` file with real credentials to version control. The `.env` file is already included in `.gitignore` to prevent accidental commits.
 
 #### Seed the Database:
 ```bash
