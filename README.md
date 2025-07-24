@@ -28,8 +28,8 @@ A simple Online MCQ (Multiple Choice Questions) Exam System built with React (fr
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd mcq-system
+git clone https://github.com/niska223/mcq-exam-system.git
+cd mcq-exam-system
 ```
 
 ### 2. Backend Setup
